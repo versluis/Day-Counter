@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  SettingsViewController.h
 //  Day Counter
 //
 //  Created by Jay Versluis on 24/03/2018.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface SettingsViewController : UIViewController
 
 @end
-

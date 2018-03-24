@@ -15,6 +15,7 @@
 		D2111E142066B1DA00C8B11C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2111E132066B1DA00C8B11C /* main.m */; };
 		D2111E1E2066B1DA00C8B11C /* Day_CounterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2111E1D2066B1DA00C8B11C /* Day_CounterTests.m */; };
 		D2111E292066B1DA00C8B11C /* Day_CounterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2111E282066B1DA00C8B11C /* Day_CounterUITests.m */; };
+		D2111E382066B50600C8B11C /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2111E372066B50600C8B11C /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		D2111E242066B1DA00C8B11C /* Day CounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Day CounterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2111E282066B1DA00C8B11C /* Day_CounterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Day_CounterUITests.m; sourceTree = "<group>"; };
 		D2111E2A2066B1DA00C8B11C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2111E362066B50600C8B11C /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		D2111E372066B50600C8B11C /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,8 @@
 				D2111E072066B1DA00C8B11C /* ViewController.h */,
 				D2111E082066B1DA00C8B11C /* ViewController.m */,
 				D2111E0A2066B1DA00C8B11C /* Main.storyboard */,
+				D2111E362066B50600C8B11C /* SettingsViewController.h */,
+				D2111E372066B50600C8B11C /* SettingsViewController.m */,
 				D2111E0D2066B1DA00C8B11C /* Assets.xcassets */,
 				D2111E0F2066B1DA00C8B11C /* LaunchScreen.storyboard */,
 				D2111E122066B1DA00C8B11C /* Info.plist */,
@@ -268,6 +273,7 @@
 				D2111E092066B1DA00C8B11C /* ViewController.m in Sources */,
 				D2111E142066B1DA00C8B11C /* main.m in Sources */,
 				D2111E062066B1DA00C8B11C /* AppDelegate.m in Sources */,
+				D2111E382066B50600C8B11C /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
