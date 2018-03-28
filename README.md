@@ -9,3 +9,10 @@ In its current form, the app displays a big label on the front, showing how many
 which can be set in the settings view controller (edit button on the top right).
 
 I'm building this code in a screencast - check it out here:
+
+It's also available on YouTube in three parts:
+* Part 1: (graphical setup in Interface Builder)
+* Part 2: (calendar and date methods)
+* Part 3: (Key Value Observing)
+
+Enjoy, and Happy Hacking!
