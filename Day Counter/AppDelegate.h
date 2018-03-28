@@ -10,6 +10,9 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
+- (NSDate *)loadData;
+- (void)saveData:(NSDate *)date;
+
 @property (strong, nonatomic) UIWindow *window;
 
 @end

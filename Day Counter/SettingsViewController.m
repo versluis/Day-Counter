@@ -7,17 +7,29 @@
 //
 
 #import "SettingsViewController.h"
+#import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface SettingsViewController ()
 @property (strong, nonatomic) IBOutlet UIDatePicker *datePicker;
-
+@property (strong, nonatomic) AppDelegate *myAppDelegate;
+@property (strong, nonatomic) NSString *dummyProperty;
 @end
 
 @implementation SettingsViewController
 
+- (AppDelegate *)myAppDelegate {
+    
+    if (!_myAppDelegate) {
+        _myAppDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    }
+    return _myAppDelegate;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self populateUI];
+    [self setupObserver];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,8 +45,45 @@
 
 - (IBAction)saveButtonPressed:(id)sender {
     
+    // save data
+    NSDate *startDate = self.datePicker.date;
+    [self.myAppDelegate saveData:startDate];
+    
+    // update dummy property
+    self.dummyProperty = [self.datePicker.date description];
+    
     // dismiss the view controller
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (void)populateUI {
+    
+    self.datePicker.date = [self.myAppDelegate loadData];
+}
+
+- (void)setupObserver {
+    
+    // grab a reference to Navigation Controller
+    UINavigationController *nav = (UINavigationController *)self.myAppDelegate.window.rootViewController;
+    
+    // grab refernece to View Controller
+    ViewController *controller = (ViewController *)nav.viewControllers.lastObject;
+    
+    // add observer
+    [self addObserver:controller forKeyPath:@"dummyProperty" options:NSKeyValueObservingOptionNew context:nil];
+    
+}
+
+
 @end
+
+
+
+
+
+
+
+
+
+
+

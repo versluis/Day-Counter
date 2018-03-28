@@ -47,10 +47,33 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+#pragma mark - Load and Save
 
+- (NSDate *)loadData {
+    
+    NSDate *startDate;
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    if (![defaults valueForKey:@"startDate"]) {
+        startDate = [NSDate date];
+    } else {
+        startDate = [defaults valueForKey:@"startDate"];
+    }
+    
+    return startDate;
+}
 
+- (void)saveData:(NSDate *)date {
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setValue:date forKey:@"startDate"];
+    [defaults synchronize];
+}
 
 @end
+
+
+
 
 
 
