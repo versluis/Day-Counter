@@ -12,7 +12,7 @@ I'm building this code in a screencast - check it out here:
 
 It's also available on YouTube in three parts:
 * Part 1: https://youtu.be/YIKWqU6mhg8 (graphical setup in Interface Builder)
-* Part 2: https://youtu.be/Kpo2J0frSWg (calendar and date methods)
-* Part 3: (Key Value Observing)
+* Part 2: https://youtu.be/Kpo2J0frSWg (NSCalendar and NSDate methods)
+* Part 3: https://youtu.be/qVGQXMeOcy0 (normalising NSDate and Key Value Observing)
 
 Enjoy, and Happy Hacking!
